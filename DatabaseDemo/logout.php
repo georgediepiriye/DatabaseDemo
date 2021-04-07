@@ -1,0 +1,9 @@
+<?php
+session_start();
+ if($_SESSION['username']){
+     unset($_SESSION['username']);
+ }
+ if($_SESSION['isAdmin']){
+    unset($_SESSION['isAdmin']);
+}
+?>
